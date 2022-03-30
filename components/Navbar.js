@@ -12,6 +12,7 @@ export default function Navbar() {
         <Link href='/dashboard'><a>Dashboard</a></Link>
         <Link href='/profile'><a>Profile</a></Link>
         <Link href='/transfer'><a>Transfer</a></Link>
+        <Link href='/admin'><a>Admin</a></Link>
 
         {user ? `LOGGED IN ASS ${user?.email}` : 'NOT LOGGED IN'}
         {user && <button onClick={signout}>Logout</button>}

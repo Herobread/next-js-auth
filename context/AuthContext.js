@@ -48,7 +48,8 @@ export const AuthContextProvider = ({ children }) => {
                     if (doc.data() === undefined) {
                         createUserDocument(user.uid, {
                             minecoins: 100,
-                            name: user.uid
+                            name: user.uid,
+                            isAdmin: false
                         })
                     }
                     setUserData(doc.data())
@@ -72,7 +73,8 @@ export const AuthContextProvider = ({ children }) => {
             .then((res) => {
                 createUserDocument(res.uid, {
                     minecoins: 100,
-                    nickname: nickname
+                    name: nickname,
+                    isAdmin: false
                 })
             })
     }

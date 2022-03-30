@@ -12,12 +12,7 @@ export default function Home() {
       <li>sign up</li>
       <li>store user data</li>
       <li>protected routes</li>
-    </ul>
-    <p>
-      coming soon
-    </p>
-    <ul>
-      <li>admin page(???)</li>
+      <li>admin page</li>
     </ul>
   </div>
 }
