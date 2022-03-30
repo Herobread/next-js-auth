@@ -2,7 +2,7 @@ import { useState } from "react"
 import Protected from "../components/Protected"
 import { useAuth } from "../context/AuthContext"
 
-export default function profile() {
+export default function Profile() {
     const { user, userData, updateUser } = useAuth()
 
     let name = userData?.name || ''

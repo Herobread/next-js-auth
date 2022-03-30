@@ -2,7 +2,7 @@ import { useState, Navigate } from 'react'
 import Protected from '../components/Protected'
 import { useAuth } from '../context/AuthContext'
 
-export default function signup() {
+export default function Signup() {
     const { login } = useAuth()
 
     const [email, setEmail] = useState('')

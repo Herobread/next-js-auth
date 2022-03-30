@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useAuth } from "../context/AuthContext"
 import Protected from '../components/Protected'
 
-export default function transfer() {
+export default function Transfer() {
     const { userData, transfer } = useAuth()
 
     const [recipient, setRecipient] = useState('')

@@ -3,7 +3,7 @@ import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import { withRouter } from 'next/router'
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <AuthContextProvider>
       <Navbar />
@@ -12,4 +12,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default withRouter(MyApp)
+export default App

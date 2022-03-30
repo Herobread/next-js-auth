@@ -2,8 +2,8 @@ import React from 'react'
 import Protected from '../components/Protected'
 import { useAuth } from '../context/AuthContext'
 
-export default function dashboard() {
-    const { user, userData, signout } = useAuth()
+export default function Dashboard() {
+    const { user, userData } = useAuth()
 
     return <div>
         <Protected requiredUserType={'user'} redirect='/dashboard' />
